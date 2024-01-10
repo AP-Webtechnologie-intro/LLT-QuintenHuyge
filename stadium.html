@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+<!-- metatags en bootstrap componenten --->   
         <head>
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,17 +19,18 @@
                 width: 100%;
             }
         </style>
-          
+<!-- einde metatags en bootstrap componenten --->          
          
          </head>
         
         <body>
+ <!-- navigatiebar elementen met dropdown, gebruik makende van de file navpadding onder CSS, en een zoekveld met termen--->          
           <navbar>
             <div id="nav">
               <nav class="navbar navbar-expand-lg navbar-warning"  style="background-color: #FDE100;" >
                 <div class="container-fluid "  bis_skin_checked="1">
                   <a class="navbar-brand">
-                    <img src="/Afbeeldingen/fotos/Borussia_Dortmund_logo.svg.png" width="35" height="35"
+                    <img src="./Afbeeldingen/fotos/Borussia_Dortmund_logo.svg.png" width="35" height="35"
                       class="d-inline-block align-top" alt="BVB" loading="lazy" style="">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -73,9 +74,10 @@
               </nav>
             </div>
           </navbar>
-
+<!-- einde navigatiebar elementen--->
          
           <main>
+ <!-- container classes met banner en card class elementen met een list--->           
             <div class="row">
               <div class="text-center pt-3">
                <h1>Signal Iduna Park <br> Stadium Borussia Dortmund</h1> 
@@ -84,7 +86,7 @@
           
           <div class="row ">
             <div class="container-fluid pt-2">
-              <img src="/Afbeeldingen/fotos/header signal.jpg_large" alt="banner stadium" class="col-12">
+              <img src="./Afbeeldingen/fotos/header signal.jpg_large" alt="banner stadium" class="col-12">
             </div>
           </div>
 
@@ -157,11 +159,11 @@
       <div class="container">
         <div class="row">
             <div class="col-md-6 px-md-2">
-                <img src="/Afbeeldingen/fotos/gelbe wand.jpeg" class="img-fluid" alt="gele muur">
+                <img src="./Afbeeldingen/fotos/gelbe wand.jpeg" class="img-fluid" alt="gele muur">
             </div>
     
             <div class="col-md-6 px-md-2">
-                <img src="/Afbeeldingen/fotos/4gelbewand.jpg" class="img-fluid" alt="gele muur">
+                <img src="./Afbeeldingen/fotos/4gelbewand.jpg" class="img-fluid" alt="gele muur">
             </div>
         </div>
     </div>
@@ -169,11 +171,11 @@
       <div class="row">
           
           <div class="col-md-6 px-md-2 pt-2">
-              <img src="/Afbeeldingen/fotos/3gelbewand.jpg" class="img-fluid" alt="gele muur">
+              <img src="./Afbeeldingen/fotos/3gelbewand.jpg" class="img-fluid" alt="gele muur">
           </div>
   
           <div class="col-md-6 px-md-2 pt-2">
-              <img src="/Afbeeldingen/fotos/5gelbewand.jpg" class="img-fluid" alt="gele muur">
+              <img src="./Afbeeldingen/fotos/5gelbewand.jpg" class="img-fluid" alt="gele muur">
           </div>
       </div>
     </div>
@@ -184,11 +186,11 @@
     <div class="container">
        <div class="row">
           <figure class="col-lg-5 ">
-              <img src="/Afbeeldingen/fotos/Stadionplan_2018_bvbnachricht_voll_regular.png" class="img-fluid" alt="Signal Iduna Park Stadium Plan">
+              <img src="./Afbeeldingen/fotos/Stadionplan_2018_bvbnachricht_voll_regular.png" class="img-fluid" alt="Signal Iduna Park Stadium Plan">
               <figcaption> plan stadion</figcaption>
           </figure>
           <div class="col-md-1 col-lg-1">
-             <img src="/Afbeeldingen/fotos/categorie.png" class="img-fluid" alt="Ticket Categories">
+             <img src="./Afbeeldingen/fotos/categorie.png" class="img-fluid" alt="Ticket Categories">
           </div>
           <div class="col-lg-6 order">
             <table class="table">
@@ -250,8 +252,9 @@
                 </tbody>
             </table>
         </div>
+<!-- einde container classes met banner en card class elementen met een list--->  
 
-
+<!-- snippet met bootstrap centrering, en een javascript button die naar top pagina brengt.--->
       <hr style="color: #FDE100;">
 
       <div id="mapid"></div>
@@ -263,11 +266,12 @@
           Terug naar top
         </button>
       </div>
+<!-- einde snippet met bootstrap centrering, en een javascript button die naar top pagina brengt.---> 
 
       
           
        </main>
-    
+ <!-- script voor een zoek functie, gebaseerd op enkele termen op voorhand ingegeven.--->   
           <script>
             function handleSearch(event) {
                 event.preventDefault();
@@ -291,7 +295,9 @@
               return new bootstrap.Tooltip(tooltipTriggerEl)
           })
         </script>
+<!-- einde script voor een zoek functie, gebaseerd op enkele termen op voorhand ingegeven.---> 
 
+<!-- script voor een google street map Stadion Dortmund.--->
 <script>
   var map = L.map('mapid').setView([51.492273, 7.451857], 13);
 
@@ -303,7 +309,7 @@
   var marker = L.marker([51.492273, 7.451857]).addTo(map);
   marker.bindPopup("<b>Signal Iduna Park</b>").openPopup();
 </script>
-
+<!-- einde script voor een google street map Stadion Dortmund.--->
 
       
 
